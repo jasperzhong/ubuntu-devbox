@@ -1,12 +1,13 @@
-# ubuntu-env-dev
+# ubuntu-devbox
 I just want a clean ubuntu environment for development. 
 
+It is mainly for pytorch development on GPU. 
 
 # Usage
 
 ## Build
 ```sh
-sudo docker built -t ubuntu-devbox .
+sudo docker build -t ubuntu-devbox .
 ```
 
 ## Run
