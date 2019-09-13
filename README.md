@@ -12,7 +12,7 @@ sudo docker build -t ubuntu-devbox .
 
 ## Run
 ```sh
-sudo nvidia-docker -itd --name ubuntu-devbox ubuntu-devbox
+sudo nvidia-docker run -itd --name ubuntu-devbox ubuntu-devbox
 ```
 
 To get the container's ip, run
