@@ -13,6 +13,7 @@ RUN apt-get update \
     build-essential \
     cmake \
     curl \
+    wget \
     ca-certificates \ 
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/* 
