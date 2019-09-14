@@ -2,7 +2,7 @@ ARG PYTHON_VERSION=3.6
 
 FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04 as dev
 
-# install openssh-server gdb vim git zsh build-essential cmake and some network tools .. 
+# install openssh-server gdb vim git zsh build-essential cmake python-dev and some network tools .. 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     openssh-server \
@@ -12,6 +12,7 @@ RUN apt-get update \
     zsh \
     build-essential \
     cmake \
+    python3-dev \
     curl \
     wget \
     iputils-ping \ 
